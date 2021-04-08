@@ -1,0 +1,78 @@
+Scripts to generate wildcard certificates using the OpenSSL command-line tools.
+
+Copyright 2021 Ralf Stephan (RaSt) <me@ralf-stephan.name>
+
+Copying  and  distribution of  this  file,  with  or without  modification,  are
+permitted in any  medium without royalty provided the copyright  notice and this
+notice are preserved.  This file is offered as-is, without any warranty.
+
+================================================================================
+
+Note
+----
+
+These scripts are not suted for the novice user.
+
+
+
+Usage
+-----
+
+On MS-Windows systems edit "C:\Windows\System32\drivers\etc\hosts", e.g.:
+
+127.0.0.1 lh.ld
+127.0.0.1 foo.lh.ld
+127.0.0.1 bar.lh.ld
+
+
+
+On GNU/Linux systems edit "/etc/hosts", e.g.:
+
+127.0.0.1 lh.ld
+127.0.0.1 foo.lh.ld
+127.0.0.1 bar.lh.ld
+
+
+
+Run scripts in this order:
+
+export TS=$(date +%s)
+make_init.sh
+make_root.sh
+make_instermediate.sh
+make_server.sh
+make_ocsp.sh
+
+
+
+References
+----------
+
+[VMC02]
+
+    John Viega, Matt Messier, Pravir Chandra.  Networking Security with OpenSSL.
+    O'Reilly Media, Inc.  June 2002.  -- ISBN: 978-0-596-00270-1
+
+[Ris17a]
+
+    Ivan Ristić.  Bulletproof SSL and  TLS - Understanding and Deploying SSL/TLS
+    and PKI to Secure Servers and  Web Applications.  Feisty Duck Limited.  July
+    2017.  -- ISBN: 978-1-907117-04-6
+
+[1617442960]
+
+    Ivan Ristić.  OpenSSL  Cookbook - A Short Guide to  the Most Frequently Used
+    OpenSSL Features  and Commands.  2017.  --  URL: https://www.feistyduck.com/
+    library/openssl-cookbook/online/ (online: 2021-04-03 09:42:40 +0000)
+
+[1617441591]
+
+    Jamie Nguyen.  OpenSSL Certificate Authority.  2015-12-09.  -- URL: https://
+    jamielinux.com/docs/openssl-certificate-authority/index.html        (online:
+    2021-04-03 09:19:51 +0000)
+
+[1617461141]
+
+    Stefan H. Holek.  OpenSSL PKI  Tutorial v1.1.  2014-10-23.  -- URL: https://
+    pki-tutorial.readthedocs.io/en/latest/index.html     (online:     2021-04-03
+    14:45:41 +0000)
