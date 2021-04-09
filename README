@@ -45,6 +45,30 @@ make_ocsp.sh
 
 
 
+Copying
+-------
+
+## Scripts  to generate  wildcard  certificates using  the OpenSSL  command-line
+## tools.
+##
+## Copyright (C) 2021 Ralf Stephan (RaSt) <me@ralf-stephan.name>
+##
+## This scripts  are free  software: you  can redistribute  it and/or  modify it
+## under the terms  of the GNU General  Public License as published  by the Free
+## Software Foundation, either version 3 of the License, or (at your option) any
+## later version.
+##
+## This scripts are distributed in the hope  that it will be useful, but WITHOUT
+## ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+## FOR  A PARTICULAR  PURPOSE.   See the  GNU General  Public  License for  more
+## details.
+##
+## You should have received a copy of  the GNU General Public License along with
+## this     program     in     the     file    COPYING.      If     not,     see
+## <https://www.gnu.org/licenses/>.
+
+
+
 References
 ----------
 
